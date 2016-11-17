@@ -7,7 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="109" y="312.5" width="158" height="42"/>
+                                <rect key="frame" x="109" y="313" width="158" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90" y="362.5" width="195" height="17"/>
+                                <rect key="frame" x="90" y="363" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="graphCircle" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +55,7 @@
         <scene sceneID="xnx-a0-mVy">
             <objects>
                 <collectionViewController title="Inventory" id="cjm-Y1-FuS" customClass="InventoryCollectionViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="MAy-AR-bTO">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MAy-AR-bTO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,12 +73,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
-                                <connections>
-                                    <segue destination="ERp-sg-Y07" kind="show" id="Hzi-R2-QRU">
-                                        <segue key="commit" inheritsFrom="parent" id="7k0-hx-QbL"/>
-                                        <segue key="preview" inheritsFrom="commit" id="dIJ-YU-gGy"/>
-                                    </segue>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -91,12 +85,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y20-Ik-1Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="289"/>
+            <point key="canvasLocation" x="2054" y="-68"/>
         </scene>
-        <!--Item View Controller-->
+        <!--Item Details-->
         <scene sceneID="2C0-TE-T7k">
             <objects>
-                <viewController id="ERp-sg-Y07" customClass="ItemViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Item Details" id="ERp-sg-Y07" customClass="ItemDetailsViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Blc-q4-P7b"/>
                         <viewControllerLayoutGuide type="bottom" id="sfX-U8-ZOr"/>
@@ -104,12 +98,30 @@
                     <view key="view" contentMode="scaleToFill" id="kJ9-HS-wxs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0123456789" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3j-Ea-L7w">
+                                <rect key="frame" x="85" y="213" width="198" height="56"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="M3j-Ea-L7w" secondAttribute="trailing" constant="76" id="QsR-SM-4lM"/>
+                            <constraint firstItem="M3j-Ea-L7w" firstAttribute="leading" secondItem="kJ9-HS-wxs" secondAttribute="leadingMargin" constant="69" id="bTb-yM-c6J"/>
+                            <constraint firstItem="sfX-U8-ZOr" firstAttribute="top" secondItem="M3j-Ea-L7w" secondAttribute="bottom" constant="349" id="ccf-23-hAB"/>
+                            <constraint firstItem="M3j-Ea-L7w" firstAttribute="top" secondItem="Blc-q4-P7b" secondAttribute="bottom" constant="149" id="dgl-qR-CwJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemIDLbl" destination="M3j-Ea-L7w" id="FvM-Dj-a9S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVG-eB-VRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="1162"/>
+            <point key="canvasLocation" x="2053.5999999999999" y="644.52773613193403"/>
         </scene>
         <!--Scan-->
         <scene sceneID="XSF-ts-zNn">
@@ -129,9 +141,9 @@
                                     <constraint firstAttribute="width" constant="60" id="LBF-3T-vCX"/>
                                     <constraint firstAttribute="width" secondItem="nwx-Ae-mgq" secondAttribute="height" multiplier="1:1" id="cSX-7V-blF"/>
                                 </constraints>
-                                <state key="normal" title="Add To Inventory" image="add"/>
+                                <state key="normal" image="addCircle"/>
                                 <connections>
-                                    <segue destination="ERp-sg-Y07" kind="show" id="NXo-zq-rGJ"/>
+                                    <segue destination="1MT-uI-Xbf" kind="show" id="JfY-jm-2BZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-lA-fc9">
@@ -140,9 +152,9 @@
                                     <constraint firstAttribute="width" constant="60" id="av0-ck-Kjs"/>
                                     <constraint firstAttribute="width" secondItem="pKa-lA-fc9" secondAttribute="height" multiplier="1:1" id="zPe-JH-eXb"/>
                                 </constraints>
-                                <state key="normal" title="View Item" image="info"/>
+                                <state key="normal" image="infoCircle"/>
                                 <connections>
-                                    <action selector="viewItem:" destination="gLO-kO-A4R" eventType="touchUpInside" id="upk-Ho-Fhe"/>
+                                    <action selector="viewItemDetails:" destination="gLO-kO-A4R" eventType="touchUpInside" id="Xti-GE-adW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,7 +170,7 @@
                             <outletCollection property="gestureRecognizers" destination="UVe-xu-8Af" appends="YES" id="TyM-cf-TbZ"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="Spp-an-NaT"/>
+                    <navigationItem key="navigationItem" title="Scan" id="Spp-an-NaT"/>
                     <connections>
                         <outlet property="addToInventory" destination="nwx-Ae-mgq" id="Jmf-KY-o1c"/>
                         <outlet property="viewItem" destination="pKa-lA-fc9" id="Ift-SG-Tgr"/>
@@ -172,6 +184,24 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="460" y="1000.7496251874064"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="WPC-Ie-LTu">
+            <objects>
+                <viewController title="Add Item" id="1MT-uI-Xbf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UZV-u3-ZnE"/>
+                        <viewControllerLayoutGuide type="bottom" id="zlm-ee-O4i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lH-LJ-kcd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvD-SF-yHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="1323"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -197,7 +227,7 @@
         <scene sceneID="2C0-L5-Cal">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mbq-EH-yEJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Inventory" image="inventory" id="qAE-t8-zsv"/>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="menu" id="qAE-t8-zsv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pKb-qg-SIH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -216,7 +246,7 @@
         <scene sceneID="YAM-OK-zVw">
             <objects>
                 <navigationController title="Scan" automaticallyAdjustsScrollViewInsets="NO" id="o9C-3O-7Ta" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scan" image="scanner" id="jGt-gX-oij"/>
+                    <tabBarItem key="tabBarItem" title="Scan" image="search" id="jGt-gX-oij"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ak-JK-RI7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -233,13 +263,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="98" height="98"/>
-        <image name="dashboard" width="80" height="80"/>
-        <image name="info" width="96" height="96"/>
-        <image name="inventory" width="80" height="80"/>
-        <image name="scanner" width="80" height="80"/>
+        <image name="addCircle" width="30" height="30"/>
+        <image name="graphCircle" width="30" height="30"/>
+        <image name="infoCircle" width="30" height="30"/>
+        <image name="menu" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="NXo-zq-rGJ"/>
-    </inferredMetricsTieBreakers>
 </document>

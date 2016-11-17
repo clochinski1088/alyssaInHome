@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3118FC911DDD5B3E0052D994 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118FC901DDD5B3E0052D994 /* ItemDetailsViewController.swift */; };
 		311EEB301DDABBB000D4DC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EEB2F1DDABBB000D4DC3B /* AppDelegate.swift */; };
 		311EEB371DDABBB000D4DC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311EEB351DDABBB000D4DC3B /* Main.storyboard */; };
 		311EEB391DDABBB000D4DC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311EEB381DDABBB000D4DC3B /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		311EEB521DDABBB000D4DC3B /* LularoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EEB511DDABBB000D4DC3B /* LularoeUITests.swift */; };
 		312B02B71DDD428A00514EBB /* BarCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */; };
 		312B02B81DDD428A00514EBB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B41DDD428A00514EBB /* DashboardViewController.swift */; };
-		312B02B91DDD428A00514EBB /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B51DDD428A00514EBB /* ItemViewController.swift */; };
 		312B02BA1DDD428A00514EBB /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B61DDD428A00514EBB /* InventoryViewController.swift */; };
 		312B02BC1DDD429900514EBB /* BarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02BB1DDD429900514EBB /* BarCodeView.swift */; };
 		31B239E11DDBF1F100142B36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B239E01DDBF1F100142B36 /* Utils.swift */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3118FC901DDD5B3E0052D994 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDetailsViewController.swift; path = Controllers/ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		311EEB2C1DDABBB000D4DC3B /* Lularoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lularoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311EEB2F1DDABBB000D4DC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		311EEB361DDABBB000D4DC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		311EEB531DDABBB000D4DC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarCodeScannerViewController.swift; path = Controllers/BarCodeScannerViewController.swift; sourceTree = "<group>"; };
 		312B02B41DDD428A00514EBB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Controllers/DashboardViewController.swift; sourceTree = "<group>"; };
-		312B02B51DDD428A00514EBB /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewController.swift; path = Controllers/ItemViewController.swift; sourceTree = "<group>"; };
 		312B02B61DDD428A00514EBB /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryViewController.swift; path = Controllers/InventoryViewController.swift; sourceTree = "<group>"; };
 		312B02BB1DDD429900514EBB /* BarCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarCodeView.swift; path = Views/BarCodeView.swift; sourceTree = "<group>"; };
 		31B239E01DDBF1F100142B36 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Models/Utils.swift; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 			children = (
 				312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */,
 				312B02B41DDD428A00514EBB /* DashboardViewController.swift */,
-				312B02B51DDD428A00514EBB /* ItemViewController.swift */,
 				312B02B61DDD428A00514EBB /* InventoryViewController.swift */,
+				3118FC901DDD5B3E0052D994 /* ItemDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -304,8 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				312B02B91DDD428A00514EBB /* ItemViewController.swift in Sources */,
 				312B02BA1DDD428A00514EBB /* InventoryViewController.swift in Sources */,
+				3118FC911DDD5B3E0052D994 /* ItemDetailsViewController.swift in Sources */,
 				31B239E11DDBF1F100142B36 /* Utils.swift in Sources */,
 				312B02B71DDD428A00514EBB /* BarCodeScannerViewController.swift in Sources */,
 				31B239E91DDC003900142B36 /* Item.swift in Sources */,

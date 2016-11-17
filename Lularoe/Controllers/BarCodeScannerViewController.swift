@@ -121,14 +121,24 @@ class BarCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObj
             
             print(codeValue)
             
-            let vc = ItemViewController()
+            let vc = ItemDetailsViewController()
+            vc.itemID = codeStringValue
             self.present(vc, animated: true, completion: {})
             
         }
     }
     
-    @IBAction func viewItem(_ sender: Any) {
+    @IBAction func viewItemDetails(_ sender: Any) {
         
+        if let codeValue = codeStringValue {
+            
+            print(codeValue)
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ItemDetailsViewController") as! ItemDetailsViewController
+            vc.itemID = codeStringValue
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
     }
     
     @IBAction func dismissScan(_ sender: Any) {
@@ -185,6 +195,8 @@ class BarCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObj
                 
                 // Get string value out of metadata
                 
+                print(unwrapped.type)
+                
                 if unwrapped.type == AVMetadataObjectTypeQRCode {
                     
                     print("QR Tag")
@@ -193,7 +205,7 @@ class BarCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObj
                     awaitForAction()
                     
                 }
-                else if unwrapped.type == AVMetadataObjectTypeEAN8Code {
+                else if unwrapped.type == AVMetadataObjectTypeCode128Code {
                     
                     print("Lularoe Tag")
                     print(unwrapped.stringValue)
