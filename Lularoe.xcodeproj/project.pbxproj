@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311EEB301DDABBB000D4DC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EEB2F1DDABBB000D4DC3B /* AppDelegate.swift */; };
+		311EEB371DDABBB000D4DC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311EEB351DDABBB000D4DC3B /* Main.storyboard */; };
+		311EEB391DDABBB000D4DC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311EEB381DDABBB000D4DC3B /* Assets.xcassets */; };
+		311EEB3C1DDABBB000D4DC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311EEB3A1DDABBB000D4DC3B /* LaunchScreen.storyboard */; };
+		311EEB471DDABBB000D4DC3B /* LularoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EEB461DDABBB000D4DC3B /* LularoeTests.swift */; };
+		311EEB521DDABBB000D4DC3B /* LularoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EEB511DDABBB000D4DC3B /* LularoeUITests.swift */; };
+		312B02B71DDD428A00514EBB /* BarCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */; };
+		312B02B81DDD428A00514EBB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B41DDD428A00514EBB /* DashboardViewController.swift */; };
+		312B02B91DDD428A00514EBB /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B51DDD428A00514EBB /* ItemViewController.swift */; };
+		312B02BA1DDD428A00514EBB /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02B61DDD428A00514EBB /* InventoryViewController.swift */; };
+		312B02BC1DDD429900514EBB /* BarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B02BB1DDD429900514EBB /* BarCodeView.swift */; };
+		31B239E11DDBF1F100142B36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B239E01DDBF1F100142B36 /* Utils.swift */; };
+		31B239E91DDC003900142B36 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B239E81DDC003900142B36 /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311EEB431DDABBB000D4DC3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311EEB241DDABBB000D4DC3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311EEB2B1DDABBB000D4DC3B;
+			remoteInfo = Lularoe;
+		};
+		311EEB4E1DDABBB000D4DC3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311EEB241DDABBB000D4DC3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311EEB2B1DDABBB000D4DC3B;
+			remoteInfo = Lularoe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311EEB2C1DDABBB000D4DC3B /* Lularoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lularoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311EEB2F1DDABBB000D4DC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		311EEB361DDABBB000D4DC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		311EEB381DDABBB000D4DC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311EEB3B1DDABBB000D4DC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		311EEB3D1DDABBB000D4DC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311EEB421DDABBB000D4DC3B /* LularoeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LularoeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311EEB461DDABBB000D4DC3B /* LularoeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LularoeTests.swift; sourceTree = "<group>"; };
+		311EEB481DDABBB000D4DC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311EEB4D1DDABBB000D4DC3B /* LularoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LularoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311EEB511DDABBB000D4DC3B /* LularoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LularoeUITests.swift; sourceTree = "<group>"; };
+		311EEB531DDABBB000D4DC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarCodeScannerViewController.swift; path = Controllers/BarCodeScannerViewController.swift; sourceTree = "<group>"; };
+		312B02B41DDD428A00514EBB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Controllers/DashboardViewController.swift; sourceTree = "<group>"; };
+		312B02B51DDD428A00514EBB /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewController.swift; path = Controllers/ItemViewController.swift; sourceTree = "<group>"; };
+		312B02B61DDD428A00514EBB /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryViewController.swift; path = Controllers/InventoryViewController.swift; sourceTree = "<group>"; };
+		312B02BB1DDD429900514EBB /* BarCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarCodeView.swift; path = Views/BarCodeView.swift; sourceTree = "<group>"; };
+		31B239E01DDBF1F100142B36 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Models/Utils.swift; sourceTree = "<group>"; };
+		31B239E81DDC003900142B36 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Models/Item.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311EEB291DDABBB000D4DC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB3F1DDABBB000D4DC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB4A1DDABBB000D4DC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311EEB231DDABBB000D4DC3B = {
+			isa = PBXGroup;
+			children = (
+				311EEB2E1DDABBB000D4DC3B /* Lularoe */,
+				311EEB451DDABBB000D4DC3B /* LularoeTests */,
+				311EEB501DDABBB000D4DC3B /* LularoeUITests */,
+				311EEB2D1DDABBB000D4DC3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311EEB2D1DDABBB000D4DC3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311EEB2C1DDABBB000D4DC3B /* Lularoe.app */,
+				311EEB421DDABBB000D4DC3B /* LularoeTests.xctest */,
+				311EEB4D1DDABBB000D4DC3B /* LularoeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311EEB2E1DDABBB000D4DC3B /* Lularoe */ = {
+			isa = PBXGroup;
+			children = (
+				311EEB3D1DDABBB000D4DC3B /* Info.plist */,
+				311EEB381DDABBB000D4DC3B /* Assets.xcassets */,
+				311EEB3A1DDABBB000D4DC3B /* LaunchScreen.storyboard */,
+				311EEB351DDABBB000D4DC3B /* Main.storyboard */,
+				311EEB2F1DDABBB000D4DC3B /* AppDelegate.swift */,
+				312B02B21DDD421E00514EBB /* Controllers */,
+				312B02B11DDD41FD00514EBB /* Views */,
+				31B239DD1DDBF04700142B36 /* Models */,
+			);
+			path = Lularoe;
+			sourceTree = "<group>";
+		};
+		311EEB451DDABBB000D4DC3B /* LularoeTests */ = {
+			isa = PBXGroup;
+			children = (
+				311EEB461DDABBB000D4DC3B /* LularoeTests.swift */,
+				311EEB481DDABBB000D4DC3B /* Info.plist */,
+			);
+			path = LularoeTests;
+			sourceTree = "<group>";
+		};
+		311EEB501DDABBB000D4DC3B /* LularoeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				311EEB511DDABBB000D4DC3B /* LularoeUITests.swift */,
+				311EEB531DDABBB000D4DC3B /* Info.plist */,
+			);
+			path = LularoeUITests;
+			sourceTree = "<group>";
+		};
+		312B02B11DDD41FD00514EBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				312B02BB1DDD429900514EBB /* BarCodeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		312B02B21DDD421E00514EBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				312B02B31DDD428A00514EBB /* BarCodeScannerViewController.swift */,
+				312B02B41DDD428A00514EBB /* DashboardViewController.swift */,
+				312B02B51DDD428A00514EBB /* ItemViewController.swift */,
+				312B02B61DDD428A00514EBB /* InventoryViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		31B239DD1DDBF04700142B36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31B239E01DDBF1F100142B36 /* Utils.swift */,
+				31B239E81DDC003900142B36 /* Item.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311EEB2B1DDABBB000D4DC3B /* Lularoe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311EEB561DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "Lularoe" */;
+			buildPhases = (
+				311EEB281DDABBB000D4DC3B /* Sources */,
+				311EEB291DDABBB000D4DC3B /* Frameworks */,
+				311EEB2A1DDABBB000D4DC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lularoe;
+			productName = Lularoe;
+			productReference = 311EEB2C1DDABBB000D4DC3B /* Lularoe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		311EEB411DDABBB000D4DC3B /* LularoeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311EEB591DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "LularoeTests" */;
+			buildPhases = (
+				311EEB3E1DDABBB000D4DC3B /* Sources */,
+				311EEB3F1DDABBB000D4DC3B /* Frameworks */,
+				311EEB401DDABBB000D4DC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311EEB441DDABBB000D4DC3B /* PBXTargetDependency */,
+			);
+			name = LularoeTests;
+			productName = LularoeTests;
+			productReference = 311EEB421DDABBB000D4DC3B /* LularoeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		311EEB4C1DDABBB000D4DC3B /* LularoeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311EEB5C1DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "LularoeUITests" */;
+			buildPhases = (
+				311EEB491DDABBB000D4DC3B /* Sources */,
+				311EEB4A1DDABBB000D4DC3B /* Frameworks */,
+				311EEB4B1DDABBB000D4DC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311EEB4F1DDABBB000D4DC3B /* PBXTargetDependency */,
+			);
+			name = LularoeUITests;
+			productName = LularoeUITests;
+			productReference = 311EEB4D1DDABBB000D4DC3B /* LularoeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311EEB241DDABBB000D4DC3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Collin Lochinski";
+				TargetAttributes = {
+					311EEB2B1DDABBB000D4DC3B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 62LLS8LXXE;
+						ProvisioningStyle = Automatic;
+					};
+					311EEB411DDABBB000D4DC3B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 62LLS8LXXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 311EEB2B1DDABBB000D4DC3B;
+					};
+					311EEB4C1DDABBB000D4DC3B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 62LLS8LXXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 311EEB2B1DDABBB000D4DC3B;
+					};
+				};
+			};
+			buildConfigurationList = 311EEB271DDABBB000D4DC3B /* Build configuration list for PBXProject "Lularoe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311EEB231DDABBB000D4DC3B;
+			productRefGroup = 311EEB2D1DDABBB000D4DC3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311EEB2B1DDABBB000D4DC3B /* Lularoe */,
+				311EEB411DDABBB000D4DC3B /* LularoeTests */,
+				311EEB4C1DDABBB000D4DC3B /* LularoeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311EEB2A1DDABBB000D4DC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311EEB3C1DDABBB000D4DC3B /* LaunchScreen.storyboard in Resources */,
+				311EEB391DDABBB000D4DC3B /* Assets.xcassets in Resources */,
+				311EEB371DDABBB000D4DC3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB401DDABBB000D4DC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB4B1DDABBB000D4DC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311EEB281DDABBB000D4DC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312B02B91DDD428A00514EBB /* ItemViewController.swift in Sources */,
+				312B02BA1DDD428A00514EBB /* InventoryViewController.swift in Sources */,
+				31B239E11DDBF1F100142B36 /* Utils.swift in Sources */,
+				312B02B71DDD428A00514EBB /* BarCodeScannerViewController.swift in Sources */,
+				31B239E91DDC003900142B36 /* Item.swift in Sources */,
+				312B02B81DDD428A00514EBB /* DashboardViewController.swift in Sources */,
+				311EEB301DDABBB000D4DC3B /* AppDelegate.swift in Sources */,
+				312B02BC1DDD429900514EBB /* BarCodeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB3E1DDABBB000D4DC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311EEB471DDABBB000D4DC3B /* LularoeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311EEB491DDABBB000D4DC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311EEB521DDABBB000D4DC3B /* LularoeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311EEB441DDABBB000D4DC3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311EEB2B1DDABBB000D4DC3B /* Lularoe */;
+			targetProxy = 311EEB431DDABBB000D4DC3B /* PBXContainerItemProxy */;
+		};
+		311EEB4F1DDABBB000D4DC3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311EEB2B1DDABBB000D4DC3B /* Lularoe */;
+			targetProxy = 311EEB4E1DDABBB000D4DC3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		311EEB351DDABBB000D4DC3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311EEB361DDABBB000D4DC3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		311EEB3A1DDABBB000D4DC3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311EEB3B1DDABBB000D4DC3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311EEB541DDABBB000D4DC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		311EEB551DDABBB000D4DC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311EEB571DDABBB000D4DC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = Lularoe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.Lularoe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		311EEB581DDABBB000D4DC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = Lularoe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.Lularoe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		311EEB5A1DDABBB000D4DC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = LularoeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.LularoeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lularoe.app/Lularoe";
+			};
+			name = Debug;
+		};
+		311EEB5B1DDABBB000D4DC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = LularoeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.LularoeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lularoe.app/Lularoe";
+			};
+			name = Release;
+		};
+		311EEB5D1DDABBB000D4DC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = LularoeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.LularoeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Lularoe;
+			};
+			name = Debug;
+		};
+		311EEB5E1DDABBB000D4DC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 62LLS8LXXE;
+				INFOPLIST_FILE = LularoeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lochinski.LularoeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Lularoe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311EEB271DDABBB000D4DC3B /* Build configuration list for PBXProject "Lularoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311EEB541DDABBB000D4DC3B /* Debug */,
+				311EEB551DDABBB000D4DC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311EEB561DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "Lularoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311EEB571DDABBB000D4DC3B /* Debug */,
+				311EEB581DDABBB000D4DC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311EEB591DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "LularoeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311EEB5A1DDABBB000D4DC3B /* Debug */,
+				311EEB5B1DDABBB000D4DC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311EEB5C1DDABBB000D4DC3B /* Build configuration list for PBXNativeTarget "LularoeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311EEB5D1DDABBB000D4DC3B /* Debug */,
+				311EEB5E1DDABBB000D4DC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311EEB241DDABBB000D4DC3B /* Project object */;
+}

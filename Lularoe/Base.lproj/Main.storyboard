@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" userLabel="Dashboard" customClass="DashboardViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="109" y="312.5" width="158" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="90" y="362.5" width="195" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="-273"/>
+        </scene>
+        <!--Inventory-->
+        <scene sceneID="xnx-a0-mVy">
+            <objects>
+                <collectionViewController title="Inventory" id="cjm-Y1-FuS" customClass="InventoryCollectionViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="MAy-AR-bTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sx0-Jx-HX1">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KB3-UH-qfr">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <connections>
+                                    <segue destination="ERp-sg-Y07" kind="show" id="Hzi-R2-QRU">
+                                        <segue key="commit" inheritsFrom="parent" id="7k0-hx-QbL"/>
+                                        <segue key="preview" inheritsFrom="commit" id="dIJ-YU-gGy"/>
+                                    </segue>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="cjm-Y1-FuS" id="S8S-W4-ewk"/>
+                            <outlet property="delegate" destination="cjm-Y1-FuS" id="ZsU-vt-Mf1"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="L9Q-BJ-1Je"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y20-Ik-1Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="289"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="2C0-TE-T7k">
+            <objects>
+                <viewController id="ERp-sg-Y07" customClass="ItemViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Blc-q4-P7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfX-U8-ZOr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJ9-HS-wxs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVG-eB-VRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="1162"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="XSF-ts-zNn">
+            <objects>
+                <viewController title="Scan" id="gLO-kO-A4R" customClass="BarCodeScannerViewController" customModule="Lularoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8at-jh-TPW"/>
+                        <viewControllerLayoutGuide type="bottom" id="KvX-ng-eeG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WT9-j4-NJI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwx-Ae-mgq">
+                                <rect key="frame" x="20" y="538" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="LBF-3T-vCX"/>
+                                    <constraint firstAttribute="width" secondItem="nwx-Ae-mgq" secondAttribute="height" multiplier="1:1" id="cSX-7V-blF"/>
+                                </constraints>
+                                <state key="normal" title="Add To Inventory" image="add"/>
+                                <connections>
+                                    <segue destination="ERp-sg-Y07" kind="show" id="NXo-zq-rGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-lA-fc9">
+                                <rect key="frame" x="295" y="538" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="av0-ck-Kjs"/>
+                                    <constraint firstAttribute="width" secondItem="pKa-lA-fc9" secondAttribute="height" multiplier="1:1" id="zPe-JH-eXb"/>
+                                </constraints>
+                                <state key="normal" title="View Item" image="info"/>
+                                <connections>
+                                    <action selector="viewItem:" destination="gLO-kO-A4R" eventType="touchUpInside" id="upk-Ho-Fhe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="pKa-lA-fc9" firstAttribute="top" secondItem="nwx-Ae-mgq" secondAttribute="top" id="hve-Uz-FLH"/>
+                            <constraint firstItem="pKa-lA-fc9" firstAttribute="trailing" secondItem="WT9-j4-NJI" secondAttribute="trailing" constant="-20" id="led-Me-vLA"/>
+                            <constraint firstItem="KvX-ng-eeG" firstAttribute="top" secondItem="nwx-Ae-mgq" secondAttribute="bottom" constant="20" id="nLY-Ld-gMb"/>
+                            <constraint firstItem="nwx-Ae-mgq" firstAttribute="leading" secondItem="WT9-j4-NJI" secondAttribute="leading" constant="20" id="xyB-AQ-6bi"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UVe-xu-8Af" appends="YES" id="TyM-cf-TbZ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spp-an-NaT"/>
+                    <connections>
+                        <outlet property="addToInventory" destination="nwx-Ae-mgq" id="Jmf-KY-o1c"/>
+                        <outlet property="viewItem" destination="pKa-lA-fc9" id="Ift-SG-Tgr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laz-JP-GJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UVe-xu-8Af">
+                    <connections>
+                        <action selector="dismissScan:" destination="gLO-kO-A4R" id="d7B-eC-Ycw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="460" y="1000.7496251874064"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Mbq-EH-yEJ" kind="relationship" relationship="viewControllers" id="i5a-0H-7tg"/>
+                        <segue destination="o9C-3O-7Ta" kind="relationship" relationship="viewControllers" id="Mul-h5-kIj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1682" y="414"/>
+        </scene>
+        <!--Inventory-->
+        <scene sceneID="2C0-L5-Cal">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mbq-EH-yEJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inventory" image="inventory" id="qAE-t8-zsv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pKb-qg-SIH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cjm-Y1-FuS" kind="relationship" relationship="rootViewController" id="KJA-Cd-7yg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fv0-1K-oRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="289"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="YAM-OK-zVw">
+            <objects>
+                <navigationController title="Scan" automaticallyAdjustsScrollViewInsets="NO" id="o9C-3O-7Ta" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scan" image="scanner" id="jGt-gX-oij"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ak-JK-RI7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gLO-kO-A4R" kind="relationship" relationship="rootViewController" id="yyo-2A-9o8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2v-1O-uLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479.19999999999999" y="1000.7496251874064"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="98" height="98"/>
+        <image name="dashboard" width="80" height="80"/>
+        <image name="info" width="96" height="96"/>
+        <image name="inventory" width="80" height="80"/>
+        <image name="scanner" width="80" height="80"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NXo-zq-rGJ"/>
+    </inferredMetricsTieBreakers>
+</document>
